@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eva | Events Explorer </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.3/tocbot.css">
+    <link href='https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap'
+          rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@300;400;500;600;700&display=swap'
+          rel='stylesheet'>
+    <link rel="icon" href="caret-circle-right-duotone.svg" type="image/png">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body class="post-template">
+<div class="site">
+    <header class="site-header">
+        <div class="navbar">
+            <div class="navbar-left">
+                <a class=" "
+                   style="font-family:'Playfair Display';font-weight: 700;font-size: 18px;text-align: center;letter-spacing: 0.1em;color:  var(--ghost-accent-color);"
+                   href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ff5e20" viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <circle cx="76" cy="76" r="36" opacity="0.2"></circle>
+                        <circle cx="180" cy="76" r="36" opacity="0.2"></circle>
+                        <circle cx="76" cy="180" r="36" opacity="0.2"></circle>
+                        <circle cx="76" cy="76" r="36" fill="none" stroke="#ff5e20" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="16"></circle>
+                        <circle cx="180" cy="76" r="36" fill="none" stroke="#ff5e20" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="16"></circle>
+                        <circle cx="76" cy="180" r="36" fill="none" stroke="#ff5e20" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="16"></circle>
+                        <line x1="180" y1="152" x2="180" y2="208" fill="none" stroke="#ff5e20" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="208" y1="180" x2="152" y2="180" fill="none" stroke="#ff5e20" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="16"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="navbar-right">
+                <button class="secondaryBtn" title="Time (IST)"><a style="color:var(--ghost-accent-color)"><p
+                        id="clock"></p><a/></button>
+            </div>
+        </div>
+    </header>
+    <div class="site-content">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+              crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css"
+              href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css"/>
+
+        <div class="container">
+            <div class="row">
+                <div class="content-column col-lg-8 col-lg-6">
+                    <div class="content-area">
+                        <main class="site-main">
+                            <article
+                                    class="post tag-christmas tag-2022 single u-shadow">
+                                <header class="post-header">
+                                    <div class="post-title"
+                                         style="font-family:'Playfair Display';font-weight: 700;font-size: 48px;text-align: center;letter-spacing: -0.022em;color:  var(--ghost-accent-color);">
+                                        Events Explorer
+                                    </div>
+                                </header>
+                                <div class="post-meta"></div>
+                                <figure class="post-media" style="text-align: center">
+                                    <header class="post-header">
+                                        <h1 class="post-title" style="text-align: center">
+                                            Get Top 10 events for the Google Events URL
+                                        </h1>
+                                    </header>
+                                    <br>
+                                    <input type="text" id="data"
+                                           placeholder="Paste Events URL" autocomplete="off">
+                                    <button class="primaryBtn" onclick="generateEvents()"
+                                            title="Click to get top 10 events of the day for the URL you pasted"><a
+                                            style="color: white">Get Events →</a></button>
+                                </figure>
+                                <div style="background: white;color: white;height: 0px;"></div>
+                                <div class="post-wrapper">
+                                    <div class="post-content gh-content">
+                                        <table id="event-table" class="event-table">
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>URL</th>
+                                                <th>Event URL</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </main>
+                    </div>
+                </div>
+                <div class="related-column col-lg-3 hidden-xs hidden-sm hidden-md">
+                    <section class="related-posts">
+                        <h3 class="related-title">
+                            <span class="text">IMPORTANT</span>
+                        </h3>
+                        <div class="post-feed">
+                            <article class="post u-shadow">
+                                <figure class="post-media">
+                                    <div class="u-placeholder same-height rectangle"
+                                         style="
+           display: flex;
+    /* padding-top: 30px; */
+    vertical-align: middle;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: normal;
+    font-family: 'Epilogue';
+    padding: 60px 20px;">
+                                        #
+                                    </div>
+
+                                </figure>
+                                <div class="post-wrapper">
+                                    <header class="post-header">
+                                        <a class="post-tag" style="font-weight: 500">Events Explorer</a>
+                                        <h2 class="post-title">
+                                            How does this work ?
+                                        </h2>
+                                    </header>
+                                    <div class="post-excerpt">
+                                        <ol>
+                                            <li>When you paste any google events urls in the search field</li>
+                                            <li>It opens up a browser and collects the data of top 10 events of the
+                                                day
+                                            </li>
+                                            <ul>
+                                                <li>Title</li>
+                                                <li>URL</li>
+                                            </ul>
+                                            <li>Then displays it here in the table →</li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                                <footer class="post-footer">
+                                    <p style="color:#FF5E20;font-weight: 500;">Events Explorer</p>
+                                </footer>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+                <div class="sidebar-column col-lg-3 hidden-xs hidden-sm hidden-md">
+                    <aside class="widget-area">
+                        <div class="widget widget-recent u-shadow">
+                            <h4 class="widget-title">Date</h4>
+                            <div class="recent-posts">
+                                <article class="recent">
+                                    <header class="post-header">
+                                        <h5 class="post-title">
+                                            <p id="current-date"></p>
+                                        </h5>
+                                    </header>
+                                </article>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <script>
+            const currentDate = new Date();
+            document.getElementById("current-date").innerHTML = currentDate.toDateString();
+        </script>
+        <script>
+            function updateClock() {
+                var currentTime = new Date();
+                var hours = currentTime.getHours();
+                var minutes = currentTime.getMinutes();
+                var seconds = currentTime.getSeconds();
+
+                // Add a leading zero to the hours, minutes, and seconds if they are less than 10
+                if (hours < 10) {
+                    hours = "0" + hours;
+                }
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < 10) {
+                    seconds = "0" + seconds;
+                }
+
+                // Format the time as HH:MM:SS
+                var timeString = hours + ":" + minutes + ":" + seconds;
+
+                // Update the clock element with the current time
+                document.getElementById("clock").innerHTML = timeString;
+            }
+
+            // Update the clock every 1000 milliseconds (1 second)
+            setInterval(updateClock, 1000);
+        </script>
+
+        <script>
+            const currentTime = new Date();
+            document.getElementById("current-time").innerHTML = currentTime.toTimeString();
+        </script>
+
+        <script>
+            // Get the modal and the open modal button
+            var modal = document.getElementById("modal");
+            var openModalButton = document.getElementById("open-modal-button");
+
+            // Get the <span> element that closes the modal
+            var closeButton = document.getElementsByClassName("close-button")[0];
+
+            // When the user clicks on the open modal button, open the modal
+            openModalButton.onclick = function () {
+                modal.style.display = "block";
+                // Set the src attribute of the iframe to the desired URL
+                document.getElementById("modal-iframe").src = "https://www.google.com";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            closeButton.onclick = function () {
+                modal.style.display = "none";
+                // Reset the src attribute of the iframe to prevent multiple iframes from stacking on top of each other
+                document.getElementById("modal-iframe").src = "";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    // Reset the src attribute of the iframe
+                    document.getElementById("modal-iframe").src = "";
+                }
+            }
+
+        </script>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </div>
+    <footer id="nav" class="css-q41tqn">
+
+        <div class="css-1rscds9">
+            <div class="css-1b0fgd4">
+                <div class="css-n8ggt8">
+                    <a style="color: #797373; padding-left: 0px;margin-left:0px;" href="#">
+                        Developed by <br>Snehith
+                    </a>
+                </div>
+            </div>
+
+            <div class="css-7nicv7">
+
+                <p class="css-f2kk04">
+                    © <span>Snehith 2023</span> | All Rights Reserved.
+                    This website is owned by Snehith (“Snehith”). |
+                    The material and information provided on the site is for information purposes only. | All the
+                    properties and assets of this website belongs to (“Snehith”) |
+                    The use of this site is subject to your agreement to be bound by our Terms.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
